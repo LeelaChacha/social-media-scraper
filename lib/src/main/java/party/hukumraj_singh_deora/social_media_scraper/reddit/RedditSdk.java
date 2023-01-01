@@ -115,7 +115,9 @@ class RedditSdk {
                     request = newRequestBuilder.GET().build();
                     break;
             }
+            response = this.rateLimitedHttpClient.sendRateLimited(
+                    request, HttpResponse.BodyHandlers.ofString());
         }
-        return this.rateLimitedHttpClient.sendRateLimited(request, HttpResponse.BodyHandlers.ofString());
+        return response;
     }
 }
