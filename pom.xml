@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  ~ Copyright (c) 2022 Hukumraj Singh Deora - All Rights Reserved
+  ~ Copyright (c) 2022-2023 Hukumraj Singh Deora - All Rights Reserved
   ~ Unauthorized copying of this file, via any medium is strictly prohibited
   ~ Proprietary and confidential
   ~ Written by Hukumraj Singh Deora <me@hukumraj-singh-deora.party>
@@ -11,50 +11,63 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-  <repositories>
-    <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
-  </repositories>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
-  <parent>
-    <groupId>com.github.LeelaChacha</groupId>
-    <artifactId>chacha-maven-parent</artifactId>
-    <version>1.2.1</version>
-  </parent>
+    <parent>
+        <groupId>com.github.LeelaChacha</groupId>
+        <artifactId>chacha-maven-parent</artifactId>
+        <version>1.2.1</version>
+    </parent>
 
-  <groupId>party.hukumraj_singh_deora.sms</groupId>
-  <artifactId>social-media-scraper</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <groupId>party.hukumraj_singh_deora.sms</groupId>
+    <artifactId>social-media-scraper</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
 
-  <name>social-media-scraper</name>
-  <url>https://github.com/LeelaChacha/social-media-scraper</url>
+    <name>social-media-scraper</name>
+    <url>https://github.com/LeelaChacha/social-media-scraper</url>
 
-  <properties>
-  </properties>
+    <properties>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>commons-configuration</groupId>
-      <artifactId>commons-configuration</artifactId>
-      <version>1.10</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>31.1-jre</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.9.1</version>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+    </dependencies>
 
-  <build>
-    <pluginManagement>
-    </pluginManagement>
-  </build>
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <resources>
+          <resource>
+            <directory>src/main/resources</directory>
+          </resource>
+        </resources>
+        <testResources>
+          <testResource>
+            <directory>src/test/resources</directory>
+          </testResource>
+        </testResources>
+
+        <pluginManagement>
+        </pluginManagement>
+    </build>
 </project>
