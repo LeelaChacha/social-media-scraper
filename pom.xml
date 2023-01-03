@@ -27,6 +27,7 @@
     <groupId>party.hukumraj_singh_deora.sms</groupId>
     <artifactId>social-media-scraper</artifactId>
     <version>1.0.0</version>
+    <packaging>bundle</packaging>
 
     <name>social-media-scraper</name>
     <url>https://github.com/LeelaChacha/social-media-scraper</url>
